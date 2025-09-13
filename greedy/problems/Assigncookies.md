@@ -36,10 +36,10 @@ https://leetcode.com/problems/assign-cookies/description/
 ```
 
 # why this is the greedy approach?
-  We sort both the greed factors and the cookie sizes.
-  so we can try to satisfy the least greedy child first with the smallest available cookie.
-  if we assign the largest cookie to the least greedy child, we might waste a larger cookie that could have satisfied a more greedy child.
-  By sorting both arrays, we ensure that we are always trying to satisfy the least greedy child with the smallest available cookie, which is a greedy choice that leads to an optimal solution.
+  - We sort both the greed factors and the cookie sizes.
+  - So we can try to satisfy the least greedy child first with the smallest available cookie.
+  - If we assign the largest cookie to the least greedy child, we might waste a larger cookie that could have satisfied a more greedy child.
+  - By sorting both arrays, we ensure that we are always trying to satisfy the least greedy child with the smallest available cookie, which is a greedy choice that leads to an optimal solution.
 
 # Time Complexity: O(n log n + m log m)
    Sorting both arrays takes O(n log n) and O(m log m) time respectively.
