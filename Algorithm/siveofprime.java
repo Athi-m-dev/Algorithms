@@ -1,3 +1,4 @@
+package Algorithm;
 import java.util.*;
 public class siveofprime {
     public static void main(String[] args) {
@@ -11,6 +12,7 @@ public class siveofprime {
                 mark[i + j + 2 * i * j] = true;
             }
         }
+        
         System.out.println("The prime Number up to n is");
         if (n > 2) {
             System.out.print("2" + " ");
@@ -24,5 +26,5 @@ public class siveofprime {
     }
 }
 
-// Time Complecity - O(mid2) + O(mid)
-// space Complecity - O(mark)
+// Time Complecity - O(mid2) + O(mid) if n  = 20 where mid = (n-1)/2 = 9 then time complecity is O(81) + O(9) = O(90)
+// space Complecity - O(mark)  
