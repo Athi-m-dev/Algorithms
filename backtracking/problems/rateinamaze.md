@@ -23,7 +23,7 @@
     Explanation: No path exists from source to destination.
 
 # Recursion tree for Rat in a Maze
-   ![Screenshot](../images/rateinamaze.png)
+   ![Screenshot](../images/ratinmaze.png)
 
 ``` java 
 import java.util.*;
