@@ -97,3 +97,8 @@ class Main {
   }
 }
 
+```
+
+# Problem to practice 
+ https://www.geeksforgeeks.org/problems/rat-in-a-maze-problem/1
+
