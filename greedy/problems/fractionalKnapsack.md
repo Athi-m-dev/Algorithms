@@ -1,17 +1,19 @@
 # problem to practice
  https://www.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1
 
+
+# Explanation
+    The fractional knapsack problem is a classic optimization problem that can be solved using a greedy algorithm. The goal is to maximize the total value of items placed in a knapsack with a fixed capacity, allowing for the inclusion of fractional parts of items.
+    Each item has a specific weight and value, and the value-to-weight ratio is used to determine the order in which items are added to the knapsack.
+
 # Example 1:
     Input:
     N = 3, W = 50
     values[] = {60,100,120}
     weight[] = {10,20,30}
     Output: 240.00
-    Explanation: Total maximum value of item
-    we can have is 240.00 from the given
-    capacity of sack.
-
-
+    Explanation: The first and second items  are taken as a whole  while only 20 units of the third item is taken. Total value = 100 + 60 + 80 = 240.00
+    to get the fractional of the item we do (value/weight)*remaining capacity for ex -> (120/30)*(20(weight we needed)) = 80
 # Example 2:
     Input:
     N = 3, W = 50
