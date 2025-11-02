@@ -26,7 +26,7 @@ class Main {
                 index = i;
             }
         }
-
+    
         System.out.println("Length of LIS: " + lss);
 
         List<Integer> res = new ArrayList<>();
