@@ -33,7 +33,6 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         String m1 = sc.next();
         String m2 = sc.next();
 

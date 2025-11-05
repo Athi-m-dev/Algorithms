@@ -49,7 +49,6 @@ class Main {
     public static void main(String[] args) {
         Scanner obj = new Scanner(System.in);
         int n = obj.nextInt();
-        
         int[] nums = new int[n];
         
         for (int i = 0; i < n; i++) {
@@ -57,7 +56,6 @@ class Main {
         }
         
         int target = obj.nextInt();
-        
         System.out.println(findcombination(nums , n , target));
     }
 }

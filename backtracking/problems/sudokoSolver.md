@@ -2,7 +2,6 @@
 ``` java
 import java.util.*;
 class Solution {
-
   public static boolean solveSudoku(char[][] board) {
     for (int i = 0; i < 9; i++) {
       for (int j = 0; j < 9; j++) {
@@ -25,7 +24,7 @@ class Solution {
     }
     return true;
   }
-
+  
   public static boolean isValid(char[][] board, int row, int col, char c) {
     for (int i = 0; i < 9; i++) {
       if (board[i][col] == c)

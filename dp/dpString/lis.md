@@ -17,10 +17,11 @@ class Main {
         for (int i = 1; i < n; i++) {
             for (int j = 0; j < i; j++) {
                 if (arr[i] > arr[j] && dp[i] < dp[j] + 1) {
-                    dp[i] = dp[j] + 1;
-                    ss[i] = j;
+                    dp[i] = dp[j] + 1; // length of the sequence 
+                    ss[i] = j; // maintain all the index of the subsequence
                 }
             }
+            
             if (dp[i] > lss) {
                 lss = dp[i];
                 index = i;
