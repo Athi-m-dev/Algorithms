@@ -1,5 +1,4 @@
 package codes;
-
 import java.util.Scanner;
 class CalculateArea {
     public static void main(String[] args) {

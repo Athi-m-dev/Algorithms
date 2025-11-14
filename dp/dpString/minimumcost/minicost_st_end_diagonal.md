@@ -1,8 +1,6 @@
 ```java
- import java.util.*;
-
+import java.util.*;
 public class Main {
-
     static int minCost(int i, int j, int[][] grid) {
         // Base case: top-left cell
         if (i == 0 && j == 0)

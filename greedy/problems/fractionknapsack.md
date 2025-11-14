@@ -1,7 +1,6 @@
 ```java
  // You are using Java
 import java.util.*;
-
 class Item {
     int index;
     int weight;
@@ -19,7 +18,6 @@ class Item {
 public class Main {
     public static void main(String[] args) {
         Scanner obj = new Scanner(System.in);
-
         int n = obj.nextInt();
         int[] weight = new int[n];
         int[] value = new int[n];
@@ -30,7 +28,6 @@ public class Main {
         for (int i = 0; i < n; i++) {
             value[i] = obj.nextInt();
         }
-
         int W = obj.nextInt();
 
         ArrayList<Item> items = new ArrayList<>();
@@ -40,13 +37,11 @@ public class Main {
 
         // Sort by value/weight ratio in descending order using lambda
         items.sort((a, b) -> Double.compare(b.ratio, a.ratio));
-
         double totalValue = 0.0;
         int remainingCapacity = W;
 
         for (Item it : items) {
             if (remainingCapacity == 0) break;
-
             if (it.weight <= remainingCapacity) {
                 // Take whole item
                 remainingCapacity -= it.weight;
@@ -57,7 +52,7 @@ public class Main {
                     remainingCapacity + "."
                 );
             } else {
-                // Take fraction of item
+                // Take fraction of item 
                 double fraction = (double) remainingCapacity / it.weight;
                 double valAdded = it.value * fraction;
                 int percent = (int) (fraction * 100);

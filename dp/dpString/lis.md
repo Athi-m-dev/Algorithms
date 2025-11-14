@@ -1,13 +1,10 @@
 ``` java
 import java.util.*;
-
 class Main {
-
     static void getLis(int[] arr) {
         int n = arr.length;
         int[] dp = new int[n];
         int[] ss = new int[n];
-
         Arrays.fill(dp, 1);
         Arrays.fill(ss, -1);
 

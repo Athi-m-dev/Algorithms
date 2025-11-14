@@ -1,4 +1,5 @@
 ```java
+# Minimum of Query , Build & Update in Segment Tree
 import java.util.*;
 class Main {
     static int[] seg; // global segment tree array

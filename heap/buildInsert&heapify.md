@@ -1,8 +1,6 @@
 ```java
- import java.util.Scanner;
-
+import java.util.Scanner;
 public class Main {
-
     // Swap function
     public static void swap(int[] heap, int i, int j) {
         int temp = heap[i];
@@ -39,7 +37,7 @@ public class Main {
             swap(heap, i, (i - 1) / 2);
             i = (i - 1) / 2;
         }
-
+        
         return size;
     }
 
@@ -53,7 +51,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-
         int[] heap = new int[10];  // max size from constraint
         int size = 0;
         double total = 0;

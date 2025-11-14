@@ -36,7 +36,7 @@ class main {
         String s2 = new StringBuilder(s1).reverse().toString();
         return getPalindrome(s1 , s2);
     }
-
+    
     public static void main(String args[]) {
         Scanner obj = new Scanner(System.in);
         String s = obj.next();

@@ -19,10 +19,8 @@
     The Length of Longest Common Subsequence is 3
 
 ```java
-  import java.util.*;
-
+import java.util.*;
 class TUF {
-
     static String lcs(String s1, String s2) {
         int n = s1.length();
         int m = s2.length();

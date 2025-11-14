@@ -1,10 +1,8 @@
 ```java
- import java.util.*;
-
+import java.util.*;
 class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        
+        Scanner sc = new Scanner(System.in);    
         int n = sc.nextInt();  // number of intersections
         int m = sc.nextInt();  // number of roads
         
@@ -14,8 +12,8 @@ class Main {
         
         // read edges
         for (int i = 0; i < m; i++) {
-            int u = sc.nextInt();
-            int v = sc.nextInt();
+            int u = sc.nextInt(); // source
+            int v = sc.nextInt(); // destination
             int w = sc.nextInt();
             adj.get(u).add(new int[]{v, w});
             adj.get(v).add(new int[]{u, w}); // because roads are two-way
@@ -27,13 +25,12 @@ class Main {
         // Dijkstra's algorithm
         int[] dist = new int[n];
         Arrays.fill(dist, (int)1e9);
-        
-        int[] parent = new int[n];
-        for (int i = 0; i < n; i++) parent[i] = i;
+        // int[] parent = new int[n];
+        // for (int i = 0; i < n; i++) parent[i] = i;
         
         PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[0] - b[0]);
         pq.add(new int[]{0, src});
-        dist[src] = 0;
+        dist[src] = 0;              
         
         while (!pq.isEmpty()) {
             int[] curr = pq.poll();
@@ -53,7 +50,7 @@ class Main {
                 }
             }
         }
-        
+
         // if no path
         if (dist[dest] == (int)1e9) {
             System.out.println("No path found");

@@ -4,7 +4,6 @@
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
         int n = sc.nextInt();   // number of items
         int W = sc.nextInt();   // max weight
         

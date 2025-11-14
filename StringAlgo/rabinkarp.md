@@ -1,6 +1,3 @@
-
-
-
 ```` java 
  public class KarpRabin {
     private final int PRIME = 101;
@@ -25,18 +22,16 @@
         int patternLength = pattern.length();
         long patternHash = calculateHash(pattern);
         long textHash = calculateHash(text.substring(0, patternLength));
-
+        
         for (int i = 0; i <= text.length() - patternLength; i++) {
-
             // Check if hash matches, then compare substring
             if (textHash == patternHash) {
                 if (text.substring(i, i + patternLength).equals(pattern)) {
                     System.out.println("Pattern found at index " + i);
                 }
             }
-            
-             
-            // Update hash for next window
+
+            // Update hash for next window 
             if (i < text.length() - patternLength) {
                 textHash = updateHash(
                     textHash,

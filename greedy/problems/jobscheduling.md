@@ -30,7 +30,6 @@
 class Solution {
     public ArrayList<Integer> jobSequencing(int[] deadline, int[] profit) {
        int n = profit.length;
-       
        ArrayList<Integer> ans = new ArrayList<Integer>();
        
        Job[] arr = new Job[n];

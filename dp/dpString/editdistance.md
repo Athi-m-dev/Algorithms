@@ -1,14 +1,11 @@
 ```java
  import java.util.*;
-
 public class Main {
-
     static int minEditCost(String s1, String s2, int insertCost, int deleteCost, int replaceCost) {
         int n = s1.length();
         int m = s2.length();
 
         int[][] dp = new int[n + 1][m + 1];
-
         // Base cases
         for (int i = 0; i <= n; i++) dp[i][0] = i * deleteCost; // deleting all chars
         for (int j = 0; j <= m; j++) dp[0][j] = j * insertCost; // inserting all chars
@@ -27,7 +24,6 @@ public class Main {
                 }
             }
         }
-
         return dp[n][m];
     }
 

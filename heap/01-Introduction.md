@@ -7,7 +7,7 @@
 # What is a Heap?
  -- Heaps allow for storing and searching elements based on a specific criteria.
  -- Storing elements in an array or tree are common methods.
- -- The main task is to retrieve the smallest item from the set of data.
+    -- A heap is a specialized tree-based data structure that satisfies the heap property.
 
 # Why Use a Heap?
  -- Heaps are useful when you need to frequently access the smallest (or largest) element in a collection.
@@ -36,6 +36,9 @@
 # Minimum and Maxheap violation due to inserted item
  -- In a min-heap, if a new element is inserted that is smaller than the current minimum, the heap property is violated.
  -- In a max-heap, if a new element is inserted that is larger than the current maximum, the heap property is violated.
+
+
+
 
 # Inserting and Removing Elements in a Heap
  -- Insertion in a heap involves using the upheap method and has a complexity of log n.

@@ -1,6 +1,5 @@
 ``` java 
 /**
- *
  * Z algorithm to pattern matching
  *
  * Time complexity - O(n + m)
@@ -10,14 +9,11 @@
  * http://www.utdallas.edu/~besp/demo/John2010/z-algorithm.htm
  */
 import java.util.*;
-
 public class Main {
-
     static int[] computeZArray(String str) {
         int n = str.length();
         int[] Z = new int[n];
         int L = 0, R = 0;
-
         for (int i = 1; i < n; i++) {
             if (i > R) {
                 L = R = i;

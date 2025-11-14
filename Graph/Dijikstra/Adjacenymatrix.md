@@ -21,7 +21,7 @@ public class Main {
         int[] dist = new int[V];
         Arrays.fill(dist, (int) 1e9);
         dist[src] = 0;
-
+        
         // Min-heap (priority queue)
         PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[0] - b[0]);
         pq.add(new int[]{0, src}); // {distance, node}

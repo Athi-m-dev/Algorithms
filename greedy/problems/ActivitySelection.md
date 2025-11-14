@@ -1,9 +1,7 @@
 ```java
 // You are using Java
 import java.util.*;
-
 class Main {
-
     static class Activity {
         String name;
         int start;
@@ -35,7 +33,6 @@ class Main {
 
         // Sort by end time using lambda + Integer.compare
         Collections.sort(activities, (a, b) -> Integer.compare(a.end, b.end));
-
         ArrayList<String> selected = new ArrayList<>();
         int lastEndTime = -1;
 

@@ -1,15 +1,12 @@
 ``` java 
 public class KMPStringMatch {
-
     // Function to perform KMP Search
     public static void KMPSearch(String pattern, String text) {
         int M = pattern.length();
         int N = text.length();
-
         // Create longest prefix-suffix (LPS) array
         int[] lps = new int[M];
         computeLPSArray(pattern, M, lps);
-
         int i = 0; // index for text
         int j = 0; // index for pattern
 
@@ -18,7 +15,7 @@ public class KMPStringMatch {
                 i++;
                 j++;
             }
-m
+
             if (j == M) {
                 System.out.println("Pattern found at index " + (i - j));
                 j = lps[j - 1];
@@ -55,6 +52,7 @@ m
             }
         }
     }
+
     // Main function to test the algorithm
     public static void main(String[] args) {
         String text = "ABABDABACDABABCABAB";
@@ -62,5 +60,4 @@ m
         KMPSearch(pattern, text);
     }
 }
-
 ```

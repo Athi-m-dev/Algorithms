@@ -1,9 +1,9 @@
 ```java
 // You are using Java
+# Addition of Query , Build & Update in Segment Tree
 import java.util.*;
 class Main {
     static int[] seg;
-
     // Build Segment Tree
     static void build(int ind, int low, int high, int[] arr) {
         if (low == high) {
@@ -48,7 +48,6 @@ class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         int N = sc.nextInt();
         int Q = sc.nextInt();
         int[] arr = new int[N];

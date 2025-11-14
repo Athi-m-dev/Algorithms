@@ -24,6 +24,7 @@
 
 # Recursion tree for Rat in a Maze
    ![Screenshot](../images/ratinmaze.png)
+   
 
 ``` java 
 import java.util.*;
@@ -78,12 +79,15 @@ class Solution {
     return ans;
   }
 }
-
 class Main {
   public static void main(String[] args) {
 
     int n = 4;
-    int[][] a = {{1,0,0,0},{1,1,0,1},{1,1,0,0},{0,1,1,1}};
+    int[][] a = {{1,0,0,0},
+                 {1,1,0,1},
+                 {1,1,0,0},
+                 {0,1,1,1}
+              };
 
     Solution obj = new Solution();
     ArrayList < String > res = obj.findPath(a, n);

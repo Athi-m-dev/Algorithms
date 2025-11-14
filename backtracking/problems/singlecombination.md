@@ -1,8 +1,6 @@
 ```java
  import java.util.*;
-
 class Main {
-
     // Backtracking function to collect all combinations
     static void solve(int ind, int[] nums, int target, List<Integer> ds, List<List<Integer>> ans) {
         if (target == 0) {
@@ -11,7 +9,6 @@ class Main {
         }
 
         if (ind == nums.length || target < 0) return;
-
         // Include current element
         ds.add(nums[ind]);
         solve(ind + 1, nums, target - nums[ind], ds, ans);
@@ -25,19 +22,15 @@ class Main {
         Scanner scanner = new Scanner(System.in);
         // Number of items
         int n = scanner.nextInt();
-
         // Item prices
         int[] nums = new int[n];
         for (int i = 0; i < n; i++) {
             nums[i] = scanner.nextInt();
         }
-
         // Gift card balance
         int target = scanner.nextInt();
-
         // Print first line: target * 2 - 1
         System.out.println(target * 2 - 1);
-
         List<List<Integer>> ans = new ArrayList<>();
         solve(0, nums, target, new ArrayList<>(), ans);
 
